@@ -9,7 +9,7 @@ BUILD_DIR=$1
 VENDOR_DIR="vendor"
 
 # git clone "https://github.com/Homebrew/linuxbrew.git" \
-git clone "https://github.com/Linuxbrew/brew.git ~/.linuxbrew" 
+git clone "https://github.com/Linuxbrew/brew.git" \
   "$HOME/.linuxbrew" 2>&1 | indent
 if [ $? -ne 0 ]; then
   exit 1
